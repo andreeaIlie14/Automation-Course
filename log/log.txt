@@ -1,0 +1,2014 @@
+23:20:57.400 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+23:20:57.452 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test DeleteOwnerTest/shouldDeleteOwner()
+23:20:58.834 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Talitha",
+    "lastName": "Klocko",
+    "address": "11039 Doloris Hills, East Fanny, LA 07989",
+    "city": "South Jenifer",
+    "telephone": "6"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/70
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Tue, 29 Oct 2024 21:20:44 GMT
+
+{
+    "id": 70,
+    "firstName": "Talitha",
+    "lastName": "Klocko",
+    "address": "11039 Doloris Hills, East Fanny, LA 07989",
+    "city": "South Jenifer",
+    "telephone": "6",
+    "pets": [
+        
+    ]
+}
+
+23:20:59.292 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	DELETE
+Request URI:	http://jnet.go.ro/petclinic/api/owners/70
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	ownerId=70
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+date: Tue, 29 Oct 2024 21:20:44 GMT
+
+23:20:59.293 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test DeleteOwnerTest/shouldDeleteOwner()
+13:43:17.343 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+13:43:17.417 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+13:43:19.659 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Paris",
+    "lastName": "Pouros",
+    "address": "788 Esteban Plains, Baileybury, IN 74060",
+    "city": "East Ammie",
+    "telephone": "647"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 11:43:03 GMT
+
+13:43:19.693 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+13:45:24.080 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+13:45:24.156 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+13:52:49.060 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+13:52:49.121 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+13:52:50.778 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Keith",
+    "lastName": "Braun",
+    "address": "220 Robel Roads, Judebury, KS 41566-7349",
+    "city": "New Scotty",
+    "telephone": "43963312"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 11:52:34 GMT
+
+13:52:50.821 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+13:53:12.736 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+13:53:12.794 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+13:53:14.346 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Exie",
+    "lastName": "Hahn",
+    "address": "64834 Jarrett Radial, Port Arlaview, UT 76890",
+    "city": "Port Alisha",
+    "telephone": "41693468"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 11:52:58 GMT
+
+13:53:14.386 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+13:53:23.957 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+13:53:24.016 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+14:05:58.947 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:05:59.037 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+14:06:01.230 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Jefferey",
+    "lastName": "Jast",
+    "address": "Apt. 567 09069 Swaniawski Square, Leshaven, VA 17373-5775",
+    "city": "Port Delmy",
+    "telephone": "244626"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:05:45 GMT
+
+14:06:01.260 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+14:06:37.592 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:06:37.654 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:06:39.124 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Marivel",
+    "lastName": "Rosenbaum",
+    "address": "Suite 332 882 Ernesto Walks, Konopelskiburgh, NE 69808-9244",
+    "city": "South Marcoport",
+    "telephone": "8265995"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:06:23 GMT
+
+14:06:39.186 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:12:17.486 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:12:17.540 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+14:12:19.082 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Carl",
+    "lastName": "Glover",
+    "address": "Suite 417 42027 Rowe Burg, Beverlymouth, IN 59691-5102",
+    "city": "West Hanastad",
+    "telephone": "870577550"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:12:03 GMT
+
+14:12:19.119 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+14:12:39.798 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:12:39.863 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:12:41.535 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Albina",
+    "lastName": "Wiegand",
+    "address": "Apt. 030 9215 Cartwright Crossroad, North Felicita, WA 43013-1916",
+    "city": "New Suburgh",
+    "telephone": "9341246747"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:12:25 GMT
+
+14:12:41.576 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:18:52.317 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:18:52.387 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:18:54.197 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Emmanuel",
+    "lastName": "Abbott",
+    "address": "183 Shalonda Freeway, South Madelynborough, NV 74676",
+    "city": "New Terry",
+    "telephone": "1"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:18:38 GMT
+
+14:18:54.234 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:19:26.238 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:19:26.295 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:19:28.063 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "firstName": "Hassan",
+    "lastName": "Monahan",
+    "address": "81816 Borer Skyway, New Chun, NE 91953",
+    "city": "West Andrea",
+    "telephone": "311678201"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"body","fieldName":"id","fieldValue":"0","errorMessage":"must not be specified"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:19:12 GMT
+
+14:19:28.128 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:20:30.186 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:20:30.254 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:20:31.886 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Emil",
+    "lastName": "Medhurst",
+    "address": "Apt. 934 122 Chin Corner, Lake Lasandra, KY 92547-3360",
+    "city": "West Federico",
+    "telephone": "027731"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/16
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 12:20:15 GMT
+
+{
+    "id": 16,
+    "firstName": "Emil",
+    "lastName": "Medhurst",
+    "address": "Apt. 934 122 Chin Corner, Lake Lasandra, KY 92547-3360",
+    "city": "West Federico",
+    "telephone": "027731",
+    "pets": [
+        
+    ]
+}
+
+14:20:32.413 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:23:51.550 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:23:51.614 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+14:23:53.417 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Darren",
+    "lastName": "Cronin",
+    "address": "Suite 490 699 O'Connell Courts, Lake Dorsey, CT 69791-8953",
+    "city": "Andresstad",
+    "telephone": "98036046"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/18
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 12:23:37 GMT
+
+{
+    "id": 18,
+    "firstName": "Darren",
+    "lastName": "Cronin",
+    "address": "Suite 490 699 O'Connell Courts, Lake Dorsey, CT 69791-8953",
+    "city": "Andresstad",
+    "telephone": "98036046",
+    "pets": [
+        
+    ]
+}
+
+14:23:54.244 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "name": "Matisse",
+    "birthDate": "1994/10/22",
+    "type": {
+        "id": 1,
+        "name": "Rex"
+    },
+    "owner": {
+        "firstName": "Darren",
+        "lastName": "Cronin",
+        "address": "Suite 490 699 O'Connell Courts, Lake Dorsey, CT 69791-8953",
+        "city": "Andresstad",
+        "telephone": "98036046"
+    }
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: text/plain;charset=UTF-8
+content-length: 246
+date: Thu, 31 Oct 2024 12:23:37 GMT
+
+{"className":"org.springframework.dao.DataIntegrityViolationException","exMessage":"could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement"}
+
+14:23:54.259 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+14:51:53.056 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:51:53.142 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerFirstName()
+14:51:54.801 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "",
+    "lastName": "Rice",
+    "address": "Apt. 676 5067 Yundt Points, Hamillstad, ME 06001-8151",
+    "city": "South Latrice",
+    "telephone": "00204120"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"firstName","fieldValue":"","errorMessage":"must not be empty"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:51:38 GMT
+
+14:51:54.822 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerFirstName()
+14:51:54.832 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerGivenFewDigitsTelephone()
+14:51:54.897 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Madonna",
+    "lastName": "Bernhard",
+    "address": "Apt. 658 405 Douglass Courts, South Janessa, FL 81533-5217",
+    "city": "Cassinshire",
+    "telephone": ""
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"telephone","fieldValue":"","errorMessage":"numeric value out of bounds (<10 digits>.<0 digits> expected)"},{"objectName":"owner","fieldName":"telephone","fieldValue":"","errorMessage":"must not be empty"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:51:38 GMT
+
+14:51:54.909 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerGivenFewDigitsTelephone()
+14:51:54.912 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:51:54.979 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Orval",
+    "lastName": "Grady",
+    "address": "9563 Exie Greens, New Jerricaville, IN 06441-4949",
+    "city": "Anabelhaven",
+    "telephone": "919871089"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/23
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 12:51:38 GMT
+
+{
+    "id": 23,
+    "firstName": "Orval",
+    "lastName": "Grady",
+    "address": "9563 Exie Greens, New Jerricaville, IN 06441-4949",
+    "city": "Anabelhaven",
+    "telephone": "919871089",
+    "pets": [
+        
+    ]
+}
+
+14:51:55.492 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:51:55.494 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerGivenManyDigitsTelephone()
+14:51:55.542 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Weldon",
+    "lastName": "Schulist",
+    "address": "674 Turcotte View, New Willian, DE 88957",
+    "city": "Lake Zofia",
+    "telephone": "9756567586774835584083746723992529223283573140371585446648141335477733008393683"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"telephone","fieldValue":"9756567586774835584083746723992529223283573140371585446648141335477733008393683","errorMessage":"numeric value out of bounds (<10 digits>.<0 digits> expected)"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:51:38 GMT
+
+14:51:55.543 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerGivenManyDigitsTelephone()
+14:52:01.671 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:52:01.735 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:52:03.312 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Eilene",
+    "lastName": "Baumbach",
+    "address": "Suite 873 88542 Monte Terrace, Sanfordborough, AZ 21552",
+    "city": "Hintzton",
+    "telephone": "86"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/24
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 12:51:47 GMT
+
+{
+    "id": 24,
+    "firstName": "Eilene",
+    "lastName": "Baumbach",
+    "address": "Suite 873 88542 Monte Terrace, Sanfordborough, AZ 21552",
+    "city": "Hintzton",
+    "telephone": "86",
+    "pets": [
+        
+    ]
+}
+
+14:52:03.810 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:52:15.710 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:52:15.770 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:52:17.334 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Len",
+    "lastName": "McDermott",
+    "address": "Suite 990 684 Catherina Knoll, Russelville, MN 48308",
+    "city": "Kelsiehaven",
+    "telephone": "5627073"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/25
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 12:52:01 GMT
+
+{
+    "id": 25,
+    "firstName": "Len",
+    "lastName": "McDermott",
+    "address": "Suite 990 684 Catherina Knoll, Russelville, MN 48308",
+    "city": "Kelsiehaven",
+    "telephone": "5627073",
+    "pets": [
+        
+    ]
+}
+
+14:52:17.903 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:55:17.212 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:55:17.300 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerFirstName()
+14:55:19.008 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "",
+    "lastName": "Mertz",
+    "address": "Apt. 390 69080 Dexter Lights, New Diannmouth, VA 36175",
+    "city": "Lueilwitzburgh",
+    "telephone": "5"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"firstName","fieldValue":"","errorMessage":"must not be empty"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:55:03 GMT
+
+14:55:19.029 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerFirstName()
+14:55:19.037 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerGivenFewDigitsTelephone()
+14:55:19.105 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Lyman",
+    "lastName": "Emard",
+    "address": "Apt. 539 55849 Hudson Lake, New Ghislaine, RI 56045",
+    "city": "New Dan",
+    "telephone": ""
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"telephone","fieldValue":"","errorMessage":"must not be empty"},{"objectName":"owner","fieldName":"telephone","fieldValue":"","errorMessage":"numeric value out of bounds (<10 digits>.<0 digits> expected)"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:55:03 GMT
+
+14:55:19.114 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerGivenFewDigitsTelephone()
+14:55:19.117 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:55:19.186 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Tuyet",
+    "lastName": "Rogahn",
+    "address": "Apt. 998 275 Jakubowski Lake, North Mindibury, IA 92079",
+    "city": "Marcusstad",
+    "telephone": "7472410"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/28
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 12:55:03 GMT
+
+{
+    "id": 28,
+    "firstName": "Tuyet",
+    "lastName": "Rogahn",
+    "address": "Apt. 998 275 Jakubowski Lake, North Mindibury, IA 92079",
+    "city": "Marcusstad",
+    "telephone": "7472410",
+    "pets": [
+        
+    ]
+}
+
+14:55:19.674 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+14:55:19.676 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerGivenManyDigitsTelephone()
+14:55:19.721 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Audie",
+    "lastName": "Reichert",
+    "address": "718 Dach Forest, South Solomon, CO 94049",
+    "city": "Freidaberg",
+    "telephone": "44944842238368083991822410587850710162"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"telephone","fieldValue":"44944842238368083991822410587850710162","errorMessage":"numeric value out of bounds (<10 digits>.<0 digits> expected)"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 12:55:03 GMT
+
+14:55:19.722 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerGivenManyDigitsTelephone()
+14:55:24.607 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+14:55:24.667 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+14:55:26.215 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Hortencia",
+    "lastName": "McKenzie",
+    "address": "72830 Reyes Circles, Langoshside, NM 51157",
+    "city": "Lacieside",
+    "telephone": "23"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/30
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 12:55:10 GMT
+
+{
+    "id": 30,
+    "firstName": "Hortencia",
+    "lastName": "McKenzie",
+    "address": "72830 Reyes Circles, Langoshside, NM 51157",
+    "city": "Lacieside",
+    "telephone": "23",
+    "pets": [
+        
+    ]
+}
+
+14:55:26.714 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+16:21:44.457 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+16:21:44.574 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test GetOwnerListTest/shouldGetOwnerList()
+16:21:46.773 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Joette",
+    "lastName": "Strosin",
+    "address": "1968 Jaymie Drives, South Katherine, OR 77483-3903",
+    "city": "New Ivyhaven",
+    "telephone": "07490533"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/33
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 14:21:30 GMT
+
+{
+    "id": 33,
+    "firstName": "Joette",
+    "lastName": "Strosin",
+    "address": "1968 Jaymie Drives, South Katherine, OR 77483-3903",
+    "city": "New Ivyhaven",
+    "telephone": "07490533",
+    "pets": [
+        
+    ]
+}
+
+16:21:47.967 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	GET
+Request URI:	http://jnet.go.ro/petclinic/api/owners/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 14:21:32 GMT
+
+[
+    {
+        "id": 1,
+        "firstName": "George",
+        "lastName": "Franklin",
+        "address": "110 W. Liberty St.",
+        "city": "Madison",
+        "telephone": "6085551023",
+        "pets": [
+            {
+                "id": 1,
+                "name": "Leo",
+                "birthDate": "2010/09/07",
+                "type": {
+                    "id": 1,
+                    "name": "cat"
+                },
+                "owner": 1,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "firstName": "Betty",
+        "lastName": "Davis",
+        "address": "638 Cardinal Ave.",
+        "city": "Sun Prairie",
+        "telephone": "6085551749",
+        "pets": [
+            {
+                "id": 2,
+                "name": "Basil",
+                "birthDate": "2012/08/06",
+                "type": {
+                    "id": 6,
+                    "name": "hamster"
+                },
+                "owner": 2,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "firstName": "Eduardo",
+        "lastName": "Rodriquez",
+        "address": "2693 Commerce St.",
+        "city": "McFarland",
+        "telephone": "6085558763",
+        "pets": [
+            {
+                "id": 4,
+                "name": "Jewel",
+                "birthDate": "2010/03/07",
+                "type": {
+                    "id": 2,
+                    "name": "dog"
+                },
+                "owner": 3,
+                "visits": [
+                    
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Rosy",
+                "birthDate": "2011/04/17",
+                "type": {
+                    "id": 2,
+                    "name": "dog"
+                },
+                "owner": 3,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "firstName": "Harold",
+        "lastName": "Davis",
+        "address": "563 Friendly St.",
+        "city": "Windsor",
+        "telephone": "6085553198",
+        "pets": [
+            {
+                "id": 5,
+                "name": "Iggy",
+                "birthDate": "2010/11/30",
+                "type": {
+                    "id": 3,
+                    "name": "lizard"
+                },
+                "owner": 4,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "firstName": "Peter",
+        "lastName": "McTavish",
+        "address": "2387 S. Fair Way",
+        "city": "Madison",
+        "telephone": "6085552765",
+        "pets": [
+            {
+                "id": 6,
+                "name": "George",
+                "birthDate": "2010/01/20",
+                "type": {
+                    "id": 4,
+                    "name": "snake"
+                },
+                "owner": 5,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "firstName": "Jean",
+        "lastName": "Coleman",
+        "address": "105 N. Lake St.",
+        "city": "Monona",
+        "telephone": "6085552654",
+        "pets": [
+            {
+                "id": 8,
+                "name": "Max",
+                "birthDate": "2012/09/04",
+                "type": {
+                    "id": 1,
+                    "name": "cat"
+                },
+                "owner": 6,
+                "visits": [
+                    {
+                        "id": 3,
+                        "date": "2013/01/03",
+                        "description": "neutered",
+                        "pet": 8
+                    },
+                    {
+                        "id": 2,
+                        "date": "2013/01/02",
+                        "description": "rabies shot",
+                        "pet": 8
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "name": "Samantha",
+                "birthDate": "2012/09/04",
+                "type": {
+                    "id": 1,
+                    "name": "cat"
+                },
+                "owner": 6,
+                "visits": [
+                    {
+                        "id": 4,
+                        "date": "2013/01/04",
+                        "description": "spayed",
+                        "pet": 7
+                    },
+                    {
+                        "id": 1,
+                        "date": "2013/01/01",
+                        "description": "rabies shot",
+                        "pet": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "firstName": "Jeff",
+        "lastName": "Black",
+        "address": "1450 Oak Blvd.",
+        "city": "Monona",
+        "telephone": "6085555387",
+        "pets": [
+            {
+                "id": 9,
+                "name": "Lucky",
+                "birthDate": "2011/08/06",
+                "type": {
+                    "id": 5,
+                    "name": "bird"
+                },
+                "owner": 7,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "firstName": "Maria",
+        "lastName": "Escobito",
+        "address": "345 Maple St.",
+        "city": "Madison",
+        "telephone": "6085557683",
+        "pets": [
+            {
+                "id": 10,
+                "name": "Mulligan",
+                "birthDate": "2007/02/24",
+                "type": {
+                    "id": 2,
+                    "name": "dog"
+                },
+                "owner": 8,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "firstName": "David",
+        "lastName": "Schroeder",
+        "address": "2749 Blackhawk Trail",
+        "city": "Madison",
+        "telephone": "6085559435",
+        "pets": [
+            {
+                "id": 11,
+                "name": "Freddy",
+                "birthDate": "2010/03/09",
+                "type": {
+                    "id": 5,
+                    "name": "bird"
+                },
+                "owner": 9,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "firstName": "Carlos",
+        "lastName": "Estaban",
+        "address": "2335 Independence La.",
+        "city": "Waunakee",
+        "telephone": "6085555487",
+        "pets": [
+            {
+                "id": 12,
+                "name": "Lucky",
+                "birthDate": "2010/06/24",
+                "type": {
+                    "id": 2,
+                    "name": "dog"
+                },
+                "owner": 10,
+                "visits": [
+                    
+                ]
+            },
+            {
+                "id": 13,
+                "name": "Sly",
+                "birthDate": "2012/06/08",
+                "type": {
+                    "id": 1,
+                    "name": "cat"
+                },
+                "owner": 10,
+                "visits": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "firstName": "Marlin",
+        "lastName": "Beier",
+        "address": "660 Xochitl Flats, Geralynchester, GA 93049-6924",
+        "city": "Okunevastad",
+        "telephone": "194237688",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 12,
+        "firstName": "Cortney",
+        "lastName": "Hickle",
+        "address": "9007 Feil Shoal, Aurorafort, WY 12464",
+        "city": "Shaunbury",
+        "telephone": "58822",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 13,
+        "firstName": "Dinorah",
+        "lastName": "Gleason",
+        "address": "Suite 561 15419 Kautzer Brooks, North Kennaborough, IA 95840-7575",
+        "city": "East Stephan",
+        "telephone": "31429076",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 14,
+        "firstName": "Bambi",
+        "lastName": "Zieme",
+        "address": "Suite 795 2759 Botsford Drive, New Jennybury, OK 74540-9577",
+        "city": "North Nelidabury",
+        "telephone": "676372",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 15,
+        "firstName": "Fletcher",
+        "lastName": "Thompson",
+        "address": "114 Anette Burg, North Cristobal, AZ 44916-0847",
+        "city": "Quentinfurt",
+        "telephone": "7",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 16,
+        "firstName": "Emil",
+        "lastName": "Medhurst",
+        "address": "Apt. 934 122 Chin Corner, Lake Lasandra, KY 92547-3360",
+        "city": "West Federico",
+        "telephone": "027731",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 17,
+        "firstName": "Leigh",
+        "lastName": "Mertz",
+        "address": "108 Zane Crossroad",
+        "city": "Klingville",
+        "telephone": "1634334",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 18,
+        "firstName": "Darren",
+        "lastName": "Cronin",
+        "address": "Suite 490 699 O'Connell Courts, Lake Dorsey, CT 69791-8953",
+        "city": "Andresstad",
+        "telephone": "98036046",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 19,
+        "firstName": "Aundrea",
+        "lastName": "Stokes",
+        "address": "Suite 198 22454 Rowe Skyway, Arnoldland, UT 85498-1440",
+        "city": "Bradleytown",
+        "telephone": "355081253",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 20,
+        "firstName": "Maya",
+        "lastName": "Barrows",
+        "address": "Apt. 907 190 Hane Freeway, West Harlan, NJ 65429-6810",
+        "city": "South Romeo",
+        "telephone": "48956908",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 21,
+        "firstName": "Mckinley",
+        "lastName": "Leffler",
+        "address": "Suite 171 09997 Beahan Street, Luketown, HI 33355-8798",
+        "city": "Alphonsomouth",
+        "telephone": "376882",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 22,
+        "firstName": "Percy",
+        "lastName": "McClure",
+        "address": "Suite 151 601 Keenan Loaf, Lake Milan, IN 30796-0121",
+        "city": "Othaburgh",
+        "telephone": "187",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 23,
+        "firstName": "Orval",
+        "lastName": "Grady",
+        "address": "9563 Exie Greens, New Jerricaville, IN 06441-4949",
+        "city": "Anabelhaven",
+        "telephone": "919871089",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 24,
+        "firstName": "Eilene",
+        "lastName": "Baumbach",
+        "address": "Suite 873 88542 Monte Terrace, Sanfordborough, AZ 21552",
+        "city": "Hintzton",
+        "telephone": "86",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 25,
+        "firstName": "Len",
+        "lastName": "McDermott",
+        "address": "Suite 990 684 Catherina Knoll, Russelville, MN 48308",
+        "city": "Kelsiehaven",
+        "telephone": "5627073",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 26,
+        "firstName": "Otis",
+        "lastName": "Hansen",
+        "address": "161 Stehr Station, Lake Trinity, LA 68585-0114",
+        "city": "Torphyberg",
+        "telephone": "66",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 27,
+        "firstName": "Dusty",
+        "lastName": "Bernhard",
+        "address": "Apt. 170 34993 Quitzon Rest, North Lillia, VT 65083-6333",
+        "city": "New Shad",
+        "telephone": "7555636",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 28,
+        "firstName": "Tuyet",
+        "lastName": "Rogahn",
+        "address": "Apt. 998 275 Jakubowski Lake, North Mindibury, IA 92079",
+        "city": "Marcusstad",
+        "telephone": "7472410",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 29,
+        "firstName": "Kelli",
+        "lastName": "Denesik",
+        "address": "22101 Simonis Mountain",
+        "city": "Paucekmouth",
+        "telephone": "764066414",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 30,
+        "firstName": "Hortencia",
+        "lastName": "McKenzie",
+        "address": "72830 Reyes Circles, Langoshside, NM 51157",
+        "city": "Lacieside",
+        "telephone": "23",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 31,
+        "firstName": "Patrick",
+        "lastName": "Marvin",
+        "address": "85893 Leanne Locks, Carinafurt, IN 03959-0220",
+        "city": "Klinghaven",
+        "telephone": "660332523",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 32,
+        "firstName": "Lindsay",
+        "lastName": "Jakubowski",
+        "address": "517 Flatley Turnpike, Sixtaside, MD 55492-0879",
+        "city": "Alysiashire",
+        "telephone": "26",
+        "pets": [
+            
+        ]
+    },
+    {
+        "id": 33,
+        "firstName": "Joette",
+        "lastName": "Strosin",
+        "address": "1968 Jaymie Drives, South Katherine, OR 77483-3903",
+        "city": "New Ivyhaven",
+        "telephone": "07490533",
+        "pets": [
+            
+        ]
+    }
+]
+
+16:21:48.366 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test GetOwnerListTest/shouldGetOwnerList()
+16:21:48.379 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerFirstName()
+16:21:48.448 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "",
+    "lastName": "Schamberger",
+    "address": "63110 Sol Station, Lacyview, CO 38856-5927",
+    "city": "Cormierton",
+    "telephone": "7400162223"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"firstName","fieldValue":"","errorMessage":"must not be empty"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 14:21:32 GMT
+
+16:21:48.449 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerFirstName()
+16:21:48.451 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerGivenFewDigitsTelephone()
+16:21:48.530 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Breann",
+    "lastName": "Emard",
+    "address": "4128 Wunsch Lights, West Joshua, WY 64128",
+    "city": "Legrosland",
+    "telephone": ""
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"telephone","fieldValue":"","errorMessage":"numeric value out of bounds (<10 digits>.<0 digits> expected)"},{"objectName":"owner","fieldName":"telephone","fieldValue":"","errorMessage":"must not be empty"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 14:21:32 GMT
+
+16:21:48.532 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerGivenFewDigitsTelephone()
+16:21:48.534 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+16:21:48.597 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Marcos",
+    "lastName": "Witting",
+    "address": "05309 Shad Cove, West Elidiaborough, AZ 59564",
+    "city": "Lake Epifania",
+    "telephone": "2410681"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/34
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 14:21:32 GMT
+
+{
+    "id": 34,
+    "firstName": "Marcos",
+    "lastName": "Witting",
+    "address": "05309 Shad Cove, West Elidiaborough, AZ 59564",
+    "city": "Lake Epifania",
+    "telephone": "2410681",
+    "pets": [
+        
+    ]
+}
+
+16:21:48.619 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+16:21:48.621 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldFailedToCreateOwnerGivenManyDigitsTelephone()
+16:21:48.681 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Refugio",
+    "lastName": "Rodriguez",
+    "address": "5102 Stefanie Burg, West Joesphberg, CO 61853",
+    "city": "West Lauryn",
+    "telephone": "58348808141080270404200463421387340825539167001255436443723786354"
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+errors: [{"objectName":"owner","fieldName":"telephone","fieldValue":"58348808141080270404200463421387340825539167001255436443723786354","errorMessage":"numeric value out of bounds (<10 digits>.<0 digits> expected)"}]
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-length: 0
+date: Thu, 31 Oct 2024 14:21:32 GMT
+
+16:21:48.682 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldFailedToCreateOwnerGivenManyDigitsTelephone()
+16:21:48.687 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test DeleteOwnerTest/shouldDeleteOwner()
+16:21:48.747 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Wilbur",
+    "lastName": "Treutel",
+    "address": "555 Altenwerth Street, Salvatoreview, NJ 06527",
+    "city": "Port Elisha",
+    "telephone": "08632781"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/35
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 14:21:32 GMT
+
+{
+    "id": 35,
+    "firstName": "Wilbur",
+    "lastName": "Treutel",
+    "address": "555 Altenwerth Street, Salvatoreview, NJ 06527",
+    "city": "Port Elisha",
+    "telephone": "08632781",
+    "pets": [
+        
+    ]
+}
+
+16:21:48.975 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	DELETE
+Request URI:	http://jnet.go.ro/petclinic/api/owners/35
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	ownerId=35
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+date: Thu, 31 Oct 2024 14:21:33 GMT
+
+16:21:48.977 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test DeleteOwnerTest/shouldDeleteOwner()
+16:21:57.521 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+16:21:57.583 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+16:21:59.388 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Ami",
+    "lastName": "Windler",
+    "address": "83262 Marvella Port, New Raymundoberg, NJ 03781-3933",
+    "city": "New Leonardborough",
+    "telephone": "3224"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/36
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Thu, 31 Oct 2024 14:21:43 GMT
+
+{
+    "id": 36,
+    "firstName": "Ami",
+    "lastName": "Windler",
+    "address": "83262 Marvella Port, New Raymundoberg, NJ 03781-3933",
+    "city": "New Leonardborough",
+    "telephone": "3224",
+    "pets": [
+        
+    ]
+}
+
+16:22:00.042 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "name": "Klimt",
+    "birthDate": "1994/06/13",
+    "type": {
+        "id": 1,
+        "name": "Rex"
+    },
+    "owner": {
+        "firstName": "Ami",
+        "lastName": "Windler",
+        "address": "83262 Marvella Port, New Raymundoberg, NJ 03781-3933",
+        "city": "New Leonardborough",
+        "telephone": "3224"
+    }
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: text/plain;charset=UTF-8
+content-length: 246
+date: Thu, 31 Oct 2024 14:21:43 GMT
+
+{"className":"org.springframework.dao.DataIntegrityViolationException","exMessage":"could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement"}
+
+16:22:00.070 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()

@@ -1,58 +1,30 @@
 package com.endava.petclinic.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
 
+@Data
+@RequiredArgsConstructor
 public class Pet {
     private long id;
-    private String name;
-    private String birthDate;
-    private PetType type;
-    private Owner owner;
+    private final String name;
+    private final String birthDate;
+    private final PetType type;
+    private final Owner owner;
 
 
-    public Pet(String name, String birthDate, PetType type, Owner owner) {
-        this.name = name;
-        this.birthDate = birthDate;
-        this.type = type;
-        this.owner = owner;
+    @Override
+    public String toString() {
+        ObjectMapper objectMapper = new ObjectMapper();  //converteste din obiect in json
+        try {
+            return objectMapper.writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            return super.toString();
+        }
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public PetType getType() {
-        return type;
-    }
-
-    public void setType(PetType type) {
-        this.type = type;
-    }
-
-    public Owner getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
-
-    public Pet(long id) {
-        this.id = id;
-    }
-
 }

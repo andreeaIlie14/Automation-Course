@@ -1,5 +1,7 @@
 package com.endava.petclinic.client;
 
+import com.endava.petclinic.filters.AuthenticationFilter;
+import com.endava.petclinic.filters.LogFilter;
 import com.endava.petclinic.model.Owner;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -12,7 +14,8 @@ public class OwnerClient {
 
     public Response createOwner(Owner owner) {
 
-       return given().baseUri(getBaseUri())
+       return given().filters(new AuthenticationFilter(), new LogFilter())
+                .baseUri(getBaseUri())
                 .basePath(getBasePath())
                 .contentType(ContentType.JSON)
                 .body(owner)
@@ -21,7 +24,7 @@ public class OwnerClient {
 
     public Response getOwnerById(Long ownerId) {
 
-      return given()
+      return given().filters(new AuthenticationFilter(),new LogFilter())
                 .baseUri(getBaseUri())
                 .basePath(getBasePath())
                 .pathParam("{ownerId}",ownerId)
@@ -29,14 +32,14 @@ public class OwnerClient {
     }
 
     public Response getOwnerList(){
-        return given()
+        return given().filters(new AuthenticationFilter(),new LogFilter())
                 .baseUri(getBaseUri())
                 .basePath(getBasePath())
                 .get("/api/owners/");
     }
 
     public Response deleteOwnerById(Long ownerId){
-        return given()
+        return given().filters(new AuthenticationFilter(),new LogFilter())
                 .baseUri(getBaseUri())
                 .basePath(getBasePath())
                 .pathParam("ownerId",ownerId)
@@ -45,7 +48,7 @@ public class OwnerClient {
 
 
     public Response updateOwnerById(Long ownerId, Owner owner) {
-        return given()
+        return given().filters(new AuthenticationFilter(),new LogFilter())
                 .baseUri(getBaseUri())
                 .basePath(getBasePath())
                 .pathParam("{ownerId}",ownerId)
