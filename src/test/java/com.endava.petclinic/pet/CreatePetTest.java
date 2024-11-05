@@ -8,16 +8,14 @@ import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 
+
 public class CreatePetTest extends TestBaseClass {
 
     @Test
     public void shouldCreatePet(){
         //GIVEN
-        Owner owner = testDataProvider.getOwner();
-        Response createOwnerResponse = ownerClient.createOwner(owner);
-        createOwnerResponse.then().statusCode(HttpStatus.SC_CREATED);
-        long id = createOwnerResponse.body().jsonPath().getLong("id");
-        owner.setId(id);
+        Owner owner = fixture.createOwner()
+                .getOwner();
 
         PetType petType = new PetType(1L,"Rex");
         petType.setId(1L);

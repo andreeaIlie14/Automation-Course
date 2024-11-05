@@ -14,7 +14,7 @@ public class DeleteOwnerTest extends TestBaseClass {
         Owner owner = testDataProvider.getOwner();
         Response createOwnerResponse = ownerClient.createOwner(owner);
         createOwnerResponse.then().statusCode(HttpStatus.SC_CREATED);
-        Long ownerId =  createOwnerResponse.body().jsonPath().getLong("id");
+        Long ownerId = createOwnerResponse.body().jsonPath().getLong("id");
 
 
         //WHEN

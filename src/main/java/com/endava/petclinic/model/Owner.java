@@ -1,6 +1,5 @@
 package com.endava.petclinic.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,7 +12,7 @@ import lombok.*;
 @RequiredArgsConstructor
 public class Owner {
 
-    @JsonIgnore
+    @EqualsAndHashCode.Exclude
     private long id;
     @NonNull
     private String firstName;
@@ -33,7 +32,7 @@ public class Owner {
         try {
             return objectMapper.writeValueAsString(this);
         } catch (JsonProcessingException e) {
-           return super.toString();
+            return super.toString();
         }
     }
 }

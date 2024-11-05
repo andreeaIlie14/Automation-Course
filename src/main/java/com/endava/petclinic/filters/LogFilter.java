@@ -29,22 +29,22 @@ public class LogFilter implements Filter {
                 requestSpec.getURI(),
                 LogDetail.ALL,
                 requestSpec.getConfig().getLogConfig().blacklistedHeaders(),
-                stream,true );
+                stream, true);
 
         //send request to server and get response
-        Response response = context.next(requestSpec,responseSpec);
+        Response response = context.next(requestSpec, responseSpec);
 
         //add an empty line
         try {
             outputStream.write("\n".getBytes());
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
         //print response
-        ResponsePrinter.print (response,
+        ResponsePrinter.print(response,
                 response.body(), stream,
-                LogDetail.ALL,true,
+                LogDetail.ALL, true,
                 requestSpec.getConfig().getLogConfig().blacklistedHeaders());
 
         //print info to logger

@@ -1,12 +1,12 @@
 package com.endava.petclinic.owner;
 
 import com.endava.petclinic.TestBaseClass;
-import com.endava.petclinic.client.OwnerClient;
 import com.endava.petclinic.model.Owner;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 
@@ -23,6 +23,10 @@ public class CreateOwnerTest extends TestBaseClass {
         //THEN
         response.prettyPeek().then().statusCode(HttpStatus.SC_CREATED)
                 .body("id", is(notNullValue()));
+        long id = response.body().jsonPath().getLong("id");
+
+        Owner actualOwnerDB = db.getOwnerById(id);
+        assertThat(actualOwnerDB, is(owner));
     }
 
 
@@ -44,7 +48,7 @@ public class CreateOwnerTest extends TestBaseClass {
     public void shouldFailedToCreateOwnerGivenFewDigitsTelephone() {
         //GIVEN
         Owner owner = testDataProvider.getOwner();
-        owner.setTelephone(testDataProvider.getNumberWithDigits(0,0));
+        owner.setTelephone(testDataProvider.getNumberWithDigits(0, 0));
 
         //WHEN
         Response response = ownerClient.createOwner(owner);
@@ -57,7 +61,7 @@ public class CreateOwnerTest extends TestBaseClass {
     public void shouldFailedToCreateOwnerGivenManyDigitsTelephone() {
         //GIVEN
         Owner owner = testDataProvider.getOwner();
-        owner.setTelephone(testDataProvider.getNumberWithDigits(11,100));
+        owner.setTelephone(testDataProvider.getNumberWithDigits(11, 100));
 
         //WHEN
         Response response = ownerClient.createOwner(owner);

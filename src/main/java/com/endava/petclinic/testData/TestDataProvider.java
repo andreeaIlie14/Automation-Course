@@ -18,22 +18,22 @@ public class TestDataProvider {
         owner.setLastName(faker.name().lastName());
         owner.setAddress(faker.address().fullAddress());
         owner.setCity(faker.address().city());
-        owner.setTelephone(faker.number().digits(faker.number().numberBetween(1,11)));
+        owner.setTelephone(faker.number().digits(faker.number().numberBetween(1, 11)));
 
         return owner;
 
     }
 
     public String getNumberWithDigits(int min, int max) {
-        return faker.number().digits(faker.number().numberBetween(min,max));
+        return faker.number().digits(faker.number().numberBetween(min, max));
     }
 
-    public Pet getPet (Owner owner, PetType type) {
+    public Pet getPet(Owner owner, PetType type) {
 
         String birthDate = faker.date().birthday().toInstant().atZone(ZoneId.systemDefault())
                 .format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
 
-        Pet pet = new Pet(faker.artist().name(),birthDate,type,owner);
+        Pet pet = new Pet(faker.artist().name(), birthDate, type, owner);
 
         return pet;
     }

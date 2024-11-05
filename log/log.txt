@@ -2012,3 +2012,202 @@ date: Thu, 31 Oct 2024 14:21:43 GMT
 {"className":"org.springframework.dao.DataIntegrityViolationException","exMessage":"could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement"}
 
 16:22:00.070 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+15:39:21.166 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+15:39:21.245 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreatePetTest/shouldCreatePet()
+15:39:24.107 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Ashley",
+    "lastName": "Schroeder",
+    "address": "55759 Mila Mission, Sipesborough, IL 70976-3170",
+    "city": "Weissnatstad",
+    "telephone": "71488880"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/11
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Tue, 05 Nov 2024 13:39:02 GMT
+
+{
+    "id": 11,
+    "firstName": "Ashley",
+    "lastName": "Schroeder",
+    "address": "55759 Mila Mission, Sipesborough, IL 70976-3170",
+    "city": "Weissnatstad",
+    "telephone": "71488880",
+    "pets": [
+        
+    ]
+}
+
+15:39:25.055 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "name": "Botticelli",
+    "birthDate": "2005/01/14",
+    "type": {
+        "id": 1,
+        "name": "Rex"
+    },
+    "owner": {
+        "firstName": "Ashley",
+        "lastName": "Schroeder",
+        "address": "55759 Mila Mission, Sipesborough, IL 70976-3170",
+        "city": "Weissnatstad",
+        "telephone": "71488880"
+    }
+}
+
+HTTP/1.1 400 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: text/plain;charset=UTF-8
+content-length: 246
+date: Tue, 05 Nov 2024 13:39:02 GMT
+
+{"className":"org.springframework.dao.DataIntegrityViolationException","exMessage":"could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement"}
+
+15:39:25.090 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePet()
+16:36:41.781 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+16:36:41.858 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+16:36:43.774 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Merle",
+    "lastName": "Schaefer",
+    "address": "30465 Towne Mews, West Rosamond, OR 60632",
+    "city": "Lake Carlotta",
+    "telephone": "118723"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/12
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Tue, 05 Nov 2024 14:36:22 GMT
+
+{
+    "id": 12,
+    "firstName": "Merle",
+    "lastName": "Schaefer",
+    "address": "30465 Towne Mews, West Rosamond, OR 60632",
+    "city": "Lake Carlotta",
+    "telephone": "118723",
+    "pets": [
+        
+    ]
+}
+
+16:37:05.593 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()
+16:37:43.914 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting tests on env null
+16:37:43.996 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Starting test CreateOwnerTest/shouldCreateOwner()
+16:37:45.802 [main] INFO  com.endava.petclinic.filters.LogFilter - Request method:	POST
+Request URI:	http://jnet.go.ro/petclinic/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Harley",
+    "lastName": "Block",
+    "address": "2552 Buckridge Row, Port Calandra, AR 83692",
+    "city": "Funkside",
+    "telephone": "518"
+}
+
+HTTP/1.1 201 
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+location: http://jnet.go.ro/petclinic/api/owners/13
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+transfer-encoding: chunked
+date: Tue, 05 Nov 2024 14:37:24 GMT
+
+{
+    "id": 13,
+    "firstName": "Harley",
+    "lastName": "Block",
+    "address": "2552 Buckridge Row, Port Calandra, AR 83692",
+    "city": "Funkside",
+    "telephone": "518",
+    "pets": [
+        
+    ]
+}
+
+16:38:07.514 [main] INFO  com.endava.petclinic.extension.TestReporterExtension - Finishing test CreateOwnerTest/shouldCreateOwner()

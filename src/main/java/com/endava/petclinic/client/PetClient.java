@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 
 public class PetClient {
 
-    public Response createPet (Pet pet) {
+    public Response createPet(Pet pet) {
 
         return given().filters(new AuthenticationFilter(), new LogFilter())
                 .baseUri(getBaseUri())

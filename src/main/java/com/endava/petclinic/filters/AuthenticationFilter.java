@@ -12,7 +12,7 @@ public class AuthenticationFilter implements Filter {
     public Response filter(FilterableRequestSpecification requestSpec,
                            FilterableResponseSpecification responseSpec,
                            FilterContext context) {
-        requestSpec.auth().preemptive().basic("admin","admin");
-        return context.next(requestSpec,responseSpec);
+        requestSpec.auth().preemptive().basic("admin", "admin");
+        return context.next(requestSpec, responseSpec);
     }
 }

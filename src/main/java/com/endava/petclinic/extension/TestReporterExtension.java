@@ -1,6 +1,5 @@
 package com.endava.petclinic.extension;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
@@ -18,13 +17,13 @@ public class TestReporterExtension implements BeforeTestExecutionCallback, After
 
     @Override
     public void beforeTestExecution(ExtensionContext extensionContext) {
-        LOGGER.info("Starting test {}/{}", extensionContext.getTestClass().get().getSimpleName(),extensionContext.getDisplayName());
+        LOGGER.info("Starting test {}/{}", extensionContext.getTestClass().get().getSimpleName(), extensionContext.getDisplayName());
 
     }
 
     @Override
     public void afterTestExecution(ExtensionContext extensionContext) {
-        LOGGER.info("Finishing test {}/{}", extensionContext.getTestClass().get().getSimpleName(),extensionContext.getDisplayName());
+        LOGGER.info("Finishing test {}/{}", extensionContext.getTestClass().get().getSimpleName(), extensionContext.getDisplayName());
     }
 
 

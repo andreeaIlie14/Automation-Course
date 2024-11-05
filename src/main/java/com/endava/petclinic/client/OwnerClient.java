@@ -1,22 +1,15 @@
 package com.endava.petclinic.client;
 
-import com.endava.petclinic.filters.AuthenticationFilter;
-import com.endava.petclinic.filters.LogFilter;
 import com.endava.petclinic.model.Owner;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static com.endava.petclinic.util.EnvReader.getBasePath;
-import static com.endava.petclinic.util.EnvReader.getBaseUri;
-import static io.restassured.RestAssured.given;
 
-public class OwnerClient {
+public class OwnerClient extends BaseClient {
 
     public Response createOwner(Owner owner) {
 
-       return given().filters(new AuthenticationFilter(), new LogFilter())
-                .baseUri(getBaseUri())
-                .basePath(getBasePath())
+        return getBasicRestConfig()
                 .contentType(ContentType.JSON)
                 .body(owner)
                 .post("api/owners");
@@ -24,34 +17,26 @@ public class OwnerClient {
 
     public Response getOwnerById(Long ownerId) {
 
-      return given().filters(new AuthenticationFilter(),new LogFilter())
-                .baseUri(getBaseUri())
-                .basePath(getBasePath())
-                .pathParam("{ownerId}",ownerId)
+        return getBasicRestConfig()
+                .pathParam("{ownerId}", ownerId)
                 .get("/api/owners/{ownerId}");
     }
 
-    public Response getOwnerList(){
-        return given().filters(new AuthenticationFilter(),new LogFilter())
-                .baseUri(getBaseUri())
-                .basePath(getBasePath())
+    public Response getOwnerList() {
+        return getBasicRestConfig()
                 .get("/api/owners/");
     }
 
-    public Response deleteOwnerById(Long ownerId){
-        return given().filters(new AuthenticationFilter(),new LogFilter())
-                .baseUri(getBaseUri())
-                .basePath(getBasePath())
-                .pathParam("ownerId",ownerId)
+    public Response deleteOwnerById(Long ownerId) {
+        return getBasicRestConfig()
+                .pathParam("ownerId", ownerId)
                 .delete("/api/owners/{ownerId}");
     }
 
 
     public Response updateOwnerById(Long ownerId, Owner owner) {
-        return given().filters(new AuthenticationFilter(),new LogFilter())
-                .baseUri(getBaseUri())
-                .basePath(getBasePath())
-                .pathParam("{ownerId}",ownerId)
+        return getBasicRestConfig()
+                .pathParam("{ownerId}", ownerId)
                 .body(owner)
                 .contentType(ContentType.JSON)
                 .put("/api/owners/{ownerId}");
