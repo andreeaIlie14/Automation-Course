@@ -20,7 +20,7 @@ public class FirstTest {
     @Test
     public void firstTest() {
 
-        given().baseUri("http://localhost:9966")
+        given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .log().all()
 
@@ -41,7 +41,7 @@ public class FirstTest {
         System.out.println(owner.toString());
 
         //When
-        Response response = given().baseUri("http://localhost:9966")
+        Response response = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .contentType(ContentType.JSON)
                 .body(owner)
@@ -74,7 +74,7 @@ public class FirstTest {
     public void getOwnerById() {
 
         Owner owner = new Owner("Ana", "Popescu", "Strada Mare", "Bucuresti", "0731234567");
-        Response createResponse = given().baseUri("http://localhost:9966")
+        Response createResponse = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .contentType(ContentType.JSON)
                 .body(owner)
@@ -86,7 +86,7 @@ public class FirstTest {
 
         long ownerId = createResponse.jsonPath().getLong("id");
 
-        Response getResponse = given().baseUri("http://localhost:9966")
+        Response getResponse = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .pathParam("ownerId", ownerId)
                 .log().all()
@@ -112,7 +112,7 @@ public class FirstTest {
     public void addPetToOwner() {
         Owner owner = new Owner("George", "Ionescu", "Strada Florilor", "Ploiesti", "0723123456");
 
-        Response ownerResponse = given().baseUri("http://localhost:9966")
+        Response ownerResponse = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .contentType(ContentType.JSON)
                 .body(owner)
@@ -127,7 +127,7 @@ public class FirstTest {
         Pet pet = new Pet("Rex", LocalDateTime.now().minusYears(4).toString(), petType, owner);
 
 
-        Response petResponse = given().baseUri("http://localhost:9966")
+        Response petResponse = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .contentType(ContentType.JSON)
                 .body(pet)
@@ -149,7 +149,7 @@ public class FirstTest {
 //    4.Test the get pet list API
     @Test
     public void getPetList() {
-        Response response = given().baseUri("http://localhost:9966")
+        Response response = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .log().all()
                 .when()
@@ -167,7 +167,7 @@ public class FirstTest {
     @Test
     public void createVisit() {
         Owner owner = new Owner("Ion", "Popa", "Strada Libertății", "București", "0741234567");
-        Response ownerResponse = given().baseUri("http://localhost:9966")
+        Response ownerResponse = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .contentType(ContentType.JSON)
                 .body(owner)
@@ -181,7 +181,7 @@ public class FirstTest {
         PetType petType = new PetType(1, "dog");
         Pet pet = new Pet("Rex", "2022-10-10", petType, owner);
 
-        Response petResponse = given().baseUri("http://localhost:9966")
+        Response petResponse = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .contentType(ContentType.JSON)
                 .body(pet)
@@ -197,7 +197,7 @@ public class FirstTest {
         long petId = petResponse.jsonPath().getLong("id");
 
         Visit visit = new Visit("2023-10-15", "Check-up", pet);
-        Response visitResponse = given().baseUri("http://localhost:9966")
+        Response visitResponse = given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .contentType(ContentType.JSON)
                 .body(visit)
@@ -216,7 +216,7 @@ public class FirstTest {
 
     @Test
     public void deleteOwnerById() {
-        given().baseUri("http://localhost:9966")
+        given().baseUri("http://192.168.0.110:9966")
                 .basePath("petclinic")
                 .pathParams("{ownerId}", 1)
                 .log().all()

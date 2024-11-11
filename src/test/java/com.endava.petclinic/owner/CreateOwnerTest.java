@@ -12,6 +12,22 @@ import static org.hamcrest.Matchers.notNullValue;
 
 public class CreateOwnerTest extends TestBaseClass {
 
+//    @Test
+//    public void shouldCreateOwner() {
+//        //GIVEN
+//        Owner owner = testDataProvider.getOwner();
+//
+//        //WHEN
+//        Response response = ownerClient.createOwner(owner);
+//
+//        //THEN
+//        response.prettyPeek().then().statusCode(HttpStatus.SC_CREATED)
+//                .body("id", is(notNullValue()));
+//        long id = response.body().jsonPath().getLong("id");
+//
+//        Owner actualOwnerDB = db.getOwnerById(id);
+//        assertThat(actualOwnerDB, is(owner));
+//    }
     @Test
     public void shouldCreateOwner() {
         //GIVEN
@@ -25,9 +41,11 @@ public class CreateOwnerTest extends TestBaseClass {
                 .body("id", is(notNullValue()));
         long id = response.body().jsonPath().getLong("id");
 
+        // Waiting or re-querying may be necessary if DB synchronization is an issue
         Owner actualOwnerDB = db.getOwnerById(id);
-        assertThat(actualOwnerDB, is(owner));
+        assertThat("Owner should be created and retrieved from DB", actualOwnerDB, is(owner));
     }
+
 
 
     @Test
